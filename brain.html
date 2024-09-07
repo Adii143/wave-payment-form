@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <img class="wave" src="wave.gif">
+                <div class="div">
+                    <img src="logo.jpeg" alt="">
+                </div>
+                <div class="img mx-5">
+                    <img src="pic.svg">
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="form">
+                    <img src="bp7ay.png" class="avatar">
+            
+                    <div class="main">
+                        <div class="dropdown">
+                            <button class="main-btn dropdown-toggle" type="button" id="parentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-wifi text-danger"></i> &nbsp;&nbsp;&nbsp;WiFi Payment
+                            </button>
+                            <ul class="dropdown-menu menu" aria-labelledby="parentDropdown" id="form-select-parent">
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form1')"><i class="fa-solid fa-wifi text-danger"></i> &nbsp;&nbsp;&nbsp;WiFi Payment</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form2')"><i class="fa-solid fa-house-signal text-danger"></i> &nbsp;&nbsp;&nbsp;Residential Internet</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form3')"><i class="fa-solid fa-globe text-danger"></i> &nbsp;&nbsp;&nbsp;Corporate Internet</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form4')"><i class="icofont-email text-danger"></i> &nbsp;&nbsp;&nbsp;Emails Payment</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form5')"><i class="fa-solid fa-message text-danger"></i> &nbsp;&nbsp;&nbsp;SMS Services</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form6')"><i class="fa-solid fa-globe text-danger"></i> &nbsp;&nbsp;&nbsp;Domain/Hosting</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form7')"><i class="icofont-telephone text-danger"></i> &nbsp;&nbsp;&nbsp;Telephone</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="showForm('form8')"><i class="fa-solid fa-bars text-danger"></i> &nbsp;&nbsp;&nbsp;Others</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div id="form1" class="login-content">
+                        <form action="#" class="wifi">
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Account Number</h5>
+                                    <input type="tel" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Phone Number</h5>
+                                    <input type="tel" class="input" required>
+                                </div>
+                            </div>
+                            <div class="main1">
+                                <div class="dropdown1">
+                                    <button class="btn-main dropdown-toggle" type="button" id="childDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="dropdown-item1" href="#" onclick="updateDropdown('childDropdown', '100(10GB)')"><i class="fa-solid fa-rupee-sign"></i> &nbsp;&nbsp;&nbsp;100 (10GB)</a>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="childDropdown" id="form-select-child">
+                                        <li><a class="dropdown-item1 mx-3" href="#" onclick="updateDropdown('childDropdown', '100(10GB)')"><i class="fa-solid fa-rupee-sign"></i> &nbsp;&nbsp;&nbsp;100 (10GB)</a></li>
+                                        <li><a class="dropdown-item1 mx-3" href="#" onclick="updateDropdown('childDropdown', '200(20GB)')"><i class="fa-solid fa-rupee-sign"></i> &nbsp;&nbsp;&nbsp;200 (20GB)</a></li>
+                                        <li><a class="dropdown-item1 mx-3" href="#" onclick="updateDropdown('childDropdown', '300(30GB)')"><i class="fa-solid fa-rupee-sign"></i> &nbsp;&nbsp;&nbsp;300 (30GB)</a></li>
+                                        <li><a class="dropdown-item1 mx-3" href="#" onclick="updateDropdown('childDropdown', '500(50GB)')"><i class="fa-solid fa-rupee-sign"></i> &nbsp;&nbsp;&nbsp;500 (50GB)</a></li>
+                                        <li><a class="dropdown-item1 mx-3" href="#" onclick="updateDropdown('childDropdown', '1000(100GB)')"><i class="fa-solid fa-rupee-sign"></i>&nbsp;&nbsp;&nbsp;1000 (100GB)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-tex text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+            
+
+
+                    <div id="form2" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Account Number</h5>
+                                    <input type="tel" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Customer ID</h5>
+                                    <input type="text" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Amount Rs</h5>
+                                    <input type="tel" class="input" readonly>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div id="form3" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Account Number</h5>
+                                    <input type="tel" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Customer ID</h5>
+                                    <input type="text" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Amount Rs</h5>
+                                    <input type="amount" class="input" readonly>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div id="form4" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Account Number</h5>
+                                    <input type="tel" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="div">
+                                    <h5>Provide Reference Details</h5>
+                                    <input type="email" class="input" required>
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+
+                                    <div class="input-group">
+                                        <input type="number" id="amount" class="amount-input" placeholder="Amount in Rs"
+                                            min="0" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div id="form5" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                           <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Full Name</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Account Number</h5>
+                                            <input type="tel" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Valid Email</h5>
+                                            <input type="email" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Provide Reference Details</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+
+                                    <div class="input-group">
+                                        <input type="number" id="amount" class="amount-input" placeholder="Amount in Rs"
+                                            min="0" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                    <div id="form6" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Full Name</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Account Number</h5>
+                                            <input type="tel" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Valid Email</h5>
+                                            <input type="email" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Provide Reference Details</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+
+                                    <div class="input-group">
+                                        <input type="number" id="amount" class="amount-input" placeholder="Amount in Rs"
+                                            min="0" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                    <div id="form7" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Full Name</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Phone Number</h5>
+                                            <input type="tel" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Valid Email</h5>
+                                            <input type="email" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Provide Reference Details</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+
+                                    <div class="input-group">
+                                        <input type="number" id="amount" class="amount-input" placeholder="Amount in Rs"
+                                            min="0" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                    <div id="form8" class="login-content" style="display: none;">
+                        <form action="#" class="Residential">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Full Name</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Phone Number</h5>
+                                            <input type="tel" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Valid Email</h5>
+                                            <input type="email" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-div one">
+                                        <div class="i">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="div">
+                                            <h5>Provide Reference Details</h5>
+                                            <input type="text" class="input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <i class="fa-solid fa-rupee-sign"></i>
+                                </div>
+                                <div class="div">
+
+                                    <div class="input-group">
+                                        <input type="number" id="amount" class="amount-input" placeholder="Amount in Rs"
+                                            min="0" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#">
+                                    <input type="submit" class="btn" value="jazzCash   ">
+                                </a>
+                                <a href="#">
+                                    <input type="submit" class="btn" value="Credit Card">
+                                </a>
+                            </div>
+                            <br>
+                            <div>
+                                <small>
+                                    Note:
+                                    <strong class="bottom-text text-danger">
+                                        Keep your JazzCash phone set with you & preferably close all applications on it.
+                                        The payment system will send a request on your phone to enter your JazzCash PIN
+                                        number. The request will be sent on your phone from BRAIN TELECOMMUNICATIONS.
+                                        Enter your JazzCash PIN to proceed with the payment.
+                                    </strong>
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
